@@ -160,6 +160,23 @@
   
     
     <div class="card col-lg-4 col-md-6 col-sm-12">
+      <a href="https://mrzhang2333.github.io/" class="card-body hover-with-bg" target="_blank" rel="noopener">
+        <div class="card-content">
+          
+            <div class="link-avatar my-auto">
+              <img src="https://mrzhang2333.github.io/ayer.ico" srcset="/img/loading.gif" alt="闰土请您喝猹">
+            </div>
+          
+          <div class="link-text">
+            <div class="link-title">闰土请您喝猹</div>
+            <div class="link-intro">闰土请您喝猹的附属博客</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  
+    
+    <div class="card col-lg-4 col-md-6 col-sm-12">
       <a href="https://jakting.com/" class="card-body hover-with-bg" target="_blank" rel="noopener">
         <div class="card-content">
           
@@ -229,6 +246,29 @@
   </div>
 </div>
   
+
+  
+    <!-- APlayer 音乐播放器 -->
+    <div id="aplayer"></div>
+    <script defer src="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.js"></script>
+<link rel="stylesheet" href="https://cdn.staticfile.org/aplayer/1.10.1/APlayer.min.css">
+<script type="text/javascript">
+  var oldLoadAp = window.onload;
+  window.onload = function () {
+    oldLoadAp && oldLoadAp();
+
+    new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: true,
+      autoplay: 'true' === 'true',
+      loop: 'all',
+      order: 'list',
+      theme: '#b7daff',
+      preload: 'none',
+      audio: [{"name":"Road of Loneliness","artist":"Tilka.Racheka","url":"https://raw.githubusercontent.com/marshmallowlands/BlogMusicResources/master/Tilka-Road_of_Loneliness.mp3","cover":"https://p1.music.126.net/jgpBnS0nb5VOLHrPZBJyNw==/3438172866030138.jpg"}]
+    });
+  }
+</script>
 
   
 
