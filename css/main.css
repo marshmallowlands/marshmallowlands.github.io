@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 16px;
-  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-family: Roboto,PingFang SC,Noto Sans CJK SC,Noto Sans SC,微软雅黑,Microsoft Yahei,Microsoft Yahei UI,sans-serif;
 }
 html,
 body,
@@ -547,7 +547,7 @@ a.beian-police img {
 .markdown-body {
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-family: "SF Pro SC", "SF Pro Text", "SF Pro Icons", PingFang SC, Lantinghei SC, Microsoft Yahei, Hiragino Sans GB, Microsoft Sans Serif, WenQuanYi Micro Hei, sans-serif;
+  font-family: Roboto,PingFang SC,Noto Sans CJK SC,Noto Sans SC,微软雅黑,Microsoft Yahei,Microsoft Yahei UI,sans-serif;
   color: #2c3e50;
 }
 .markdown-body h1,
@@ -581,7 +581,7 @@ a.beian-police img {
   position: relative;
 }
 .markdown-body code {
-  font-size: 85%;
+  font-size: 100%;
 }
 .markdown-body p > img,
 .markdown-body p > a > img {
