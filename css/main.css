@@ -1,7 +1,7 @@
 html,
 body {
   font-size: 16px;
-  font-family: Roboto,思源等宽,Sarasa Mono SC,更纱黑体 UI SC,PingFang SC,Segoe UI,Sarasa UI SC,Sarasa Gothic SC,Microsoft Yahei UI,Noto Sans SC,Noto Sans CJK SC,sans-serif;
+  font-family: Inter,Roboto,PingFang SC,思源等宽,Sarasa Mono SC,更纱黑体 UI SC,Segoe UI,Sarasa UI SC,Sarasa Gothic SC,Microsoft Yahei UI,Noto Sans SC,Noto Sans CJK SC,sans-serif;
 }
 html,
 body,
@@ -547,7 +547,7 @@ a.beian-police img {
 .markdown-body {
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-family: Roboto,思源等宽,Sarasa Mono SC,更纱黑体 UI SC,PingFang SC,Segoe UI,Sarasa UI SC,Sarasa Gothic SC,Microsoft Yahei UI,Noto Sans SC,Noto Sans CJK SC,sans-serif;
+  font-family: Inter,Roboto,PingFang SC,思源等宽,Sarasa Mono SC,更纱黑体 UI SC,Segoe UI,Sarasa UI SC,Sarasa Gothic SC,Microsoft Yahei UI,Noto Sans SC,Noto Sans CJK SC,sans-serif;
   color: #2c3e50;
 }
 .markdown-body h1,
