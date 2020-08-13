@@ -5,8 +5,8 @@
   
   <entry>
     <title>完美错过微信消息，导致误事</title>
-    <link href="/2020/04/26/%E9%94%99%E8%BF%87%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E4%BA%8B%E4%BB%B6/"/>
-    <url>/2020/04/26/%E9%94%99%E8%BF%87%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E4%BA%8B%E4%BB%B6/</url>
+    <link href="/2020/08/12/%E9%94%99%E8%BF%87%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E4%BA%8B%E4%BB%B6/"/>
+    <url>/2020/08/12/%E9%94%99%E8%BF%87%E5%BE%AE%E4%BF%A1%E6%B6%88%E6%81%AF%E4%BA%8B%E4%BB%B6/</url>
     
     <content type="html"><![CDATA[<p class="note note-warning">注意:可能不适用于所有人<br>头图由于缺少作者信息，如果您本人看到了请和我联系，谢谢</p><center><p style="font-size:25pt"><b>文章失效</b></p></center><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a><del>前言</del></h1><p><del>我..我真的不知道该怎么吐槽微信了，我真的无语了..<br>上次误事是在11月份，事儿比较紧急，结果半个小时才收到，这次呢？因为没收到消息导致错过上课时间，完美错过！（因为疫情嘛，所以上的是网课）<br>我真的不想说什么了。。<br>工程师出来挨打！</del></p><h1 id="有什么想说的？"><a href="#有什么想说的？" class="headerlink" title="有什么想说的？"></a><del>有什么想说的？</del></h1><p><del>我都已经气的没话说了..</del></p><h1 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a><del>结尾</del></h1><p><del>我只求腾讯服务器别又下锅了，真的，太误事了。<br>That’s it.</del></p>]]></content>
     
@@ -17,9 +17,22 @@
   
   
   <entry>
+    <title>你好世界 ! Hello World !</title>
+    <link href="/2020/08/12/%E8%AE%B0-%E7%A5%9D%E8%B4%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F/"/>
+    <url>/2020/08/12/%E8%AE%B0-%E7%A5%9D%E8%B4%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F/</url>
+    
+    <content type="html"><![CDATA[<h1 id="这是我第一次写博客，如有错误欢迎提出（也试着汉化了下自带的欢迎文档23333）"><a href="#这是我第一次写博客，如有错误欢迎提出（也试着汉化了下自带的欢迎文档23333）" class="headerlink" title="这是我第一次写博客，如有错误欢迎提出（也试着汉化了下自带的欢迎文档23333）"></a>这是我第一次写博客，如有错误欢迎提出（也试着汉化了下自带的欢迎文档23333）</h1><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="新建博客"><a href="#新建博客" class="headerlink" title="新建博客"></a>新建博客</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>更多详情: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">写作</a></p><h3 id="在本地运行，以便在浏览器浏览"><a href="#在本地运行，以便在浏览器浏览" class="headerlink" title="在本地运行，以便在浏览器浏览"></a>在本地运行，以便在浏览器浏览</h3><pre><code class="bash">$ hexo server</code></pre><p>更多详情: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">浏览</a></p><h3 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h3><pre><code class="bash">$ hexo generate</code></pre><p>更多详情: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">生成</a></p><h3 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h3><pre><code class="bash">$ hexo deploy</code></pre><p>更多详情: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">上传</a></p><p><br><br>毕竟第一次写博客，如有问题欢迎提出</p><script src="https://utteranc.es/client.js" repo="nusr/blog" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Mi 8 Lite MIUI ROM 收集</title>
-    <link href="/2020/04/19/Mi-8-Lite-ROM-%E6%94%B6%E9%9B%86/"/>
-    <url>/2020/04/19/Mi-8-Lite-ROM-%E6%94%B6%E9%9B%86/</url>
+    <link href="/2020/08/12/Mi-8-Lite-ROM-%E6%94%B6%E9%9B%86/"/>
+    <url>/2020/08/12/Mi-8-Lite-ROM-%E6%94%B6%E9%9B%86/</url>
     
     <content type="html"><![CDATA[<p class="note note-success"><b>Note:<br>目前只有卡刷版本，后续上线刷版本<br>此站点不提供存储服务，下载是从MIUI官方服务器下载的<br>数据来源于 XiaoMi Firmware Updater 网站</b><br></p><p class="note note-success">注意：<br>也可以去<a href="http://www.cucat.xyz:9000/download/" target="_blank" rel="noopener"><u>落樱友链</u></a>上看看</p><h1 id="国内版本MIUI"><a href="#国内版本MIUI" class="headerlink" title="国内版本MIUI"></a>国内版本MIUI</h1><h2 id="卡刷"><a href="#卡刷" class="headerlink" title="卡刷"></a>卡刷</h2><h4 id="稳定版"><a href="#稳定版" class="headerlink" title="稳定版"></a>稳定版</h4><p>MIUI 11.0.1.0.QDTCNXM - Android 10 <a href="https://bigota.d.miui.com/V11.0.1.0.QDTCNXM/miui_MI8Lite_V11.0.1.0.QDTCNXM_58d94853ad_10.0.zip" target="_blank" rel="noopener">下载</a><br>MIUI 10.3.2.0.PDTCNXM - Android 9 <a href="https://bigota.d.miui.com/V11.0.1.0.QDTCNXM/miui_MI8Lite_V11.0.1.0.QDTCNXM_58d94853ad_10.0.zip" target="_blank" rel="noopener">下载</a></p><h4 id="开发版"><a href="#开发版" class="headerlink" title="开发版"></a>开发版</h4><p>MIUI 20.1.9 - Android 10 <a href="https://bigota.d.miui.com/20.1.9/miui_MI8Lite_20.1.9_6305b2ae20_10.0.zip" target="_blank" rel="noopener">下载</a><br>MIUI 9.9.3 - Android 9.0 <a href="http://bigota.d.miui.com/9.9.3/miui_MI8Lite_9.9.3_cec06e7e18_9.0.zip" target="_blank" rel="noopener">下载</a></p><h2 id="线刷"><a href="#线刷" class="headerlink" title="线刷"></a>线刷</h2><h4 id="稳定版-1"><a href="#稳定版-1" class="headerlink" title="稳定版"></a>稳定版</h4><p>MIUI 11.0.1.0.QDTCNXM - Android 10 <a href="http://bigota.d.miui.com/V11.0.1.0.QDTCNXM/platina_images_V11.0.1.0.QDTCNXM_20200217.0000.00_10.0_cn_753d632137.tgz" target="_blank" rel="noopener">下载</a></p><h4 id="开发版-1"><a href="#开发版-1" class="headerlink" title="开发版"></a>开发版</h4><p>MIUI 9.9.3 - Android 9 <a href="http://bigota.d.miui.com/9.9.3/platina_images_9.9.3_20190904.0000.00_9.0_cn_99468158f9.tgz" target="_blank" rel="noopener">下载</a></p><h1 id="国际版本"><a href="#国际版本" class="headerlink" title="国际版本"></a>国际版本</h1><h2 id="卡刷-1"><a href="#卡刷-1" class="headerlink" title="卡刷"></a>卡刷</h2><h4 id="稳定版-2"><a href="#稳定版-2" class="headerlink" title="稳定版"></a>稳定版</h4><p>MIUI 11.0.1.0.QDTMIXM - Android 10 <a href="https://bigota.d.miui.com/V11.0.1.0.QDTMIXM/miui_MI8LiteGlobal_V11.0.1.0.QDTMIXM_2fb79ba67d_10.0.zip" target="_blank" rel="noopener">下载</a><br>MIUI 10.3.2.0 PDTMIXM - Android 9 <a href="https://bigota.d.miui.com/V10.3.2.0.PDTMIXM/miui_MI8LiteGlobal_V10.3.2.0.PDTMIXM_617c09d4b9_9.0.zip" target="_blank" rel="noopener">下载</a></p><h4 id="开发版-2"><a href="#开发版-2" class="headerlink" title="开发版"></a>开发版</h4><p>MIUI 9.6.27 - Android 9 <a href="http://bigota.d.miui.com/9.6.27/miui_MI8LiteGlobal_9.6.27_bcb88d046c_9.0.zip" target="_blank" rel="noopener">下载</a></p><h2 id="线刷-1"><a href="#线刷-1" class="headerlink" title="线刷"></a>线刷</h2><h4 id="稳定版-3"><a href="#稳定版-3" class="headerlink" title="稳定版"></a>稳定版</h4><p>MIUI 11.0.1.0 - Android 10 <a href="http://bigota.d.miui.com/V11.0.1.0.QDTMIXM/platina_global_images_V11.0.1.0.QDTMIXM_20200310.0000.00_10.0_global_a7ea0cce0f.tgz" target="_blank" rel="noopener">下载</a></p><h4 id="开发版-3"><a href="#开发版-3" class="headerlink" title="开发版"></a>开发版</h4><p>MIUI 9.6.27 - Android 9 <a href="http://bigota.d.miui.com/9.6.27/platina_global_images_9.6.27_20190627.0000.00_9.0_global_ceb4046e05.tgz" target="_blank" rel="noopener">下载</a></p><h1 id="俄罗斯版本"><a href="#俄罗斯版本" class="headerlink" title="俄罗斯版本"></a>俄罗斯版本</h1><h2 id="卡刷-2"><a href="#卡刷-2" class="headerlink" title="卡刷"></a>卡刷</h2><h4 id="稳定版-4"><a href="#稳定版-4" class="headerlink" title="稳定版"></a>稳定版</h4><p>MIUI 11.0.1.0 - Android 10 <a href="http://bigota.d.miui.com/V11.0.1.0.QDTRUXM/miui_PLATINARUGlobal_V11.0.1.0.QDTRUXM_11ad3a942e_10.0.zip" target="_blank" rel="noopener">下载</a></p><h4 id="开发版本"><a href="#开发版本" class="headerlink" title="开发版本"></a>开发版本</h4><p>暂无</p><h2 id="线刷-2"><a href="#线刷-2" class="headerlink" title="线刷"></a>线刷</h2><h4 id="稳定版-5"><a href="#稳定版-5" class="headerlink" title="稳定版"></a>稳定版</h4><p>暂无</p><h4 id="开发版-4"><a href="#开发版-4" class="headerlink" title="开发版"></a>开发版</h4><p>暂无</p>]]></content>
     
@@ -30,22 +43,9 @@
   
   
   <entry>
-    <title>Deepin Linux 深度美化教程</title>
-    <link href="/2020/04/12/Deepin%E7%9A%84%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/"/>
-    <url>/2020/04/12/Deepin%E7%9A%84%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/</url>
-    
-    <content type="html"><![CDATA[<h1 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h1><p>先上头图<br><br><img src="https://gitee.com/marshmallowland/GitHub-IMG/raw/master/Blog-IMG/Deepin-Linux-%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/2020-04-12-17-56.jpg" srcset="/img/loading.svg" alt="头图"><br>嗯哼，差不多就是这种亚子（样子）~<br>这是我美化好的，就差顶栏了</p><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>首先，先去GNOME-LOOK网站，<a href="http://www.gnome-look.org，然后搜索" target="_blank" rel="noopener">www.gnome-look.org，然后搜索</a> Mac OS X 主题，最好选最新版。<br><br><img src="https://gitee.com/marshmallowland/GitHub-IMG/raw/master/Blog-IMG/Deepin-Linux-%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/01.webp" srcset="/img/loading.svg" alt="GnomeLook-WEB-Site"><br></p><p>选择一个你喜欢的版本然后点击Download即可。<br><br><img src="https://gitee.com/marshmallowland/GitHub-IMG/raw/master/Blog-IMG/Deepin-Linux-%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/02.webp" srcset="/img/loading.svg" alt="Download"></p><p>然后，</p><p>如果你下载的是主题，解压扔进/home/你的用户名/.themes文件夹；<br>如果你下载的是图标，解压扔进/home/你的用户名/.icons文件夹。</p><h1 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h1><p>想应用主题，直接去设置中心选择主题，选择刚刚下载的主题，然后享受吧！</p><p><br><br>– 最新修改于：2020 年 4 月 12 日，18:30:34</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>Grand Theft Auto V 换字体记</title>
-    <link href="/2020/02/27/GTA5-%E6%8D%A2%E5%AD%97%E4%BD%93%E8%AE%B0/"/>
-    <url>/2020/02/27/GTA5-%E6%8D%A2%E5%AD%97%E4%BD%93%E8%AE%B0/</url>
+    <link href="/2020/08/12/GTA5-%E6%8D%A2%E5%AD%97%E4%BD%93%E8%AE%B0/"/>
+    <url>/2020/08/12/GTA5-%E6%8D%A2%E5%AD%97%E4%BD%93%E8%AE%B0/</url>
     
     <content type="html"><![CDATA[<h1 id="Grand-Theft-Auto-V-字体翻车记"><a href="#Grand-Theft-Auto-V-字体翻车记" class="headerlink" title="Grand Theft Auto V 字体翻车记"></a>Grand Theft Auto V 字体翻车记</h1><p>作死瞎鸡儿改字体，结果很快就翻车了<br><img src="https://gitee.com/marshmallowland/GitHub-IMG/raw/master/Blog-IMG/GTA5%E6%8D%A2%E5%AD%97%E4%BD%93%E8%AE%B0/2020-02-27-001.png" srcset="/img/loading.svg" alt="alt 翻车现场"></p><p>满屏的方块</p><h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>如果你有进 Grand Theft Auto Online 在线模式的话，就没有必要看这篇文章了，因为你修改了游戏文件你是进不了线上的（我没有进线上的需求所以我就改了），如果你把游戏文件还原的话就OK<br><br><br>还有一个就是，本文章只对简体中文PC版有效！<br><br></p><p class="note note-danger">⚠ 警告：<br>若用户未按照指定操作来使用而造成的任何损失，作者不负任何责任。</p><h1 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h1><p>由于本人有强迫症，只要字体看着不爽就立马换掉，GTA 5 的字体也在其中。所以打算把字体换掉。</p><p>首先换字体得需要两个软件，OpenIV 和 JPEXS Free Flash Decompiler（以下简称JFFD）。OpenIV 负责导出，而 JPEXS Free Flash Decompiler 负责替换字体。</p><p>首先，打开 <b>OpenIV</b> 找到 Grand Theft Auto V 一栏的 <b>Windows</b>，点击 Windows，然后，找到 update 文件夹，然后打开 <b>update.rpf &gt; x64 &gt; data &gt; cdimages &gt; scaleform_platform_pc.rpf </b>这个文件 ，然后选中 <b>font_lib_chinesesimp_pc.gfx</b> 鼠标右键选择提取，选择一个你容易找得到的目录就OK。</p><p><img src="https://gitee.com/marshmallowland/GitHub-IMG/raw/master/Blog-IMG/GTA5%E6%8D%A2%E5%AD%97%E4%BD%93%E8%AE%B0/2020-02-27-002.png" srcset="/img/loading.svg" alt="提取"></p><h1 id="准备字体替换工作"><a href="#准备字体替换工作" class="headerlink" title="准备字体替换工作"></a>准备字体替换工作</h1><p>然后使用 <b>JFFD</b> 软件打开刚刚导出的 gfx 文件，然后打开字体，找到 <b>Simp Chinese</b>，右下角找到<b>嵌入</b>，选择你喜欢的字体然后确定，<b>替换全是</b>，然后耐心等就好了。别忘了保存哦。</p><h1 id="替换"><a href="#替换" class="headerlink" title="替换"></a>替换</h1><p><img src="https://gitee.com/marshmallowland/GitHub-IMG/raw/master/Blog-IMG/GTA5%E6%8D%A2%E5%AD%97%E4%BD%93%E8%AE%B0/2020-02-27-003.png" srcset="/img/loading.svg" alt="替换"></p><p>选择刚刚修改过的 gfx 文件，然后等一会儿就好了。别忘了给文件重建，重建功能在左上角的<b>文件</b>菜单栏项。完成后尽情的在游戏里享受全新的字体体验吧！</p><h3 id="如果有疑问可以再联系我！"><a href="#如果有疑问可以再联系我！" class="headerlink" title="如果有疑问可以再联系我！"></a>如果有疑问可以再联系我！</h3><p>联系方式请区主页面菜单栏关于页面查找。</p><p><br><br>感谢浏览此文章！<br><br><br>– 2020 年 2 月 27 日编写</p>]]></content>
     
@@ -56,11 +56,11 @@
   
   
   <entry>
-    <title>你好世界 ! Hello World !</title>
-    <link href="/2019/02/13/%E8%AE%B0-%E7%A5%9D%E8%B4%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F/"/>
-    <url>/2019/02/13/%E8%AE%B0-%E7%A5%9D%E8%B4%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%88%90%E5%8A%9F/</url>
+    <title>Deepin Linux 深度美化教程</title>
+    <link href="/2020/08/12/Deepin%E7%9A%84%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/"/>
+    <url>/2020/08/12/Deepin%E7%9A%84%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/</url>
     
-    <content type="html"><![CDATA[<h1 id="这是我第一次写博客，如有错误欢迎提出（也试着汉化了下自带的欢迎文档23333）"><a href="#这是我第一次写博客，如有错误欢迎提出（也试着汉化了下自带的欢迎文档23333）" class="headerlink" title="这是我第一次写博客，如有错误欢迎提出（也试着汉化了下自带的欢迎文档23333）"></a>这是我第一次写博客，如有错误欢迎提出（也试着汉化了下自带的欢迎文档23333）</h1><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="新建博客"><a href="#新建博客" class="headerlink" title="新建博客"></a>新建博客</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;</code></pre><p>更多详情: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">写作</a></p><h3 id="在本地运行，以便在浏览器浏览"><a href="#在本地运行，以便在浏览器浏览" class="headerlink" title="在本地运行，以便在浏览器浏览"></a>在本地运行，以便在浏览器浏览</h3><pre><code class="bash">$ hexo server</code></pre><p>更多详情: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">浏览</a></p><h3 id="生成文件"><a href="#生成文件" class="headerlink" title="生成文件"></a>生成文件</h3><pre><code class="bash">$ hexo generate</code></pre><p>更多详情: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">生成</a></p><h3 id="上传文件"><a href="#上传文件" class="headerlink" title="上传文件"></a>上传文件</h3><pre><code class="bash">$ hexo deploy</code></pre><p>更多详情: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">上传</a></p><p><br><br>毕竟第一次写博客，如有问题欢迎提出</p><script src="https://utteranc.es/client.js" repo="nusr/blog" issue-term="pathname" theme="github-light" crossorigin="anonymous" async></script>]]></content>
+    <content type="html"><![CDATA[<h1 id="展示"><a href="#展示" class="headerlink" title="展示"></a>展示</h1><p>先上头图<br><br><img src="https://gitee.com/marshmallowland/GitHub-IMG/raw/master/Blog-IMG/Deepin-Linux-%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/2020-04-12-17-56.jpg" srcset="/img/loading.svg" alt="头图"><br>嗯哼，差不多就是这种亚子（样子）~<br>这是我美化好的，就差顶栏了</p><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>首先，先去GNOME-LOOK网站，<a href="http://www.gnome-look.org，然后搜索" target="_blank" rel="noopener">www.gnome-look.org，然后搜索</a> Mac OS X 主题，最好选最新版。<br><br><img src="https://gitee.com/marshmallowland/GitHub-IMG/raw/master/Blog-IMG/Deepin-Linux-%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/01.webp" srcset="/img/loading.svg" alt="GnomeLook-WEB-Site"><br></p><p>选择一个你喜欢的版本然后点击Download即可。<br><br><img src="https://gitee.com/marshmallowland/GitHub-IMG/raw/master/Blog-IMG/Deepin-Linux-%E6%B7%B1%E5%BA%A6%E7%BE%8E%E5%8C%96%E6%95%99%E7%A8%8B/02.webp" srcset="/img/loading.svg" alt="Download"></p><p>然后，</p><p>如果你下载的是主题，解压扔进/home/你的用户名/.themes文件夹；<br>如果你下载的是图标，解压扔进/home/你的用户名/.icons文件夹。</p><h1 id="美化"><a href="#美化" class="headerlink" title="美化"></a>美化</h1><p>想应用主题，直接去设置中心选择主题，选择刚刚下载的主题，然后享受吧！</p><p><br><br>– 最新修改于：2020 年 4 月 12 日，18:30:34</p>]]></content>
     
     
     
