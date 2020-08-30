@@ -1,18 +1,16 @@
+
+
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-
+<html lang="zh-CN" data-default-color-scheme=&#34;dark&#34;>
 
 
 
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
   <link rel="icon" type="image/png" href="/img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
   
   <meta name="theme-color" content="#212121">
   <meta name="description" content="Mohandar·Leon&#39;s Blog">
@@ -21,27 +19,36 @@
   <title>关于 - Mohandar·Leon&#39;s Blog</title>
 
   <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/3.0.1/github-markdown.min.css">
+
+
+  <link rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css">
+  <link rel="stylesheet" href="/lib/hint/hint.min.css">
+
+  
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css">
+  
+
+  
+
 
 <!-- 主题依赖的图标库，不要自行修改 -->
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_9n5xqdrq0nc.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_6peoq002giu.css">
 
-
-  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css">
-
-
-
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
 
 <link rel="stylesheet" href="/css/main.css">
 
 <!-- 自定义样式保持在最底部 -->
 
 
+  <script src="/js/utils.js"></script>
+  <script src="/js/color-schema.js"></script>
 </head>
 
 
 <body>
-  <header style="height: 80vh;">
+  <header style="height: 60vh;">
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">&nbsp;<strong>Mohandar·Leon's Blog</strong>&nbsp;</a>
@@ -57,60 +64,83 @@
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/">
-              <i class="iconfont icon-home-fill"></i>
-              主页</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                主页
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/archives/">
-              <i class="iconfont icon-archive-fill"></i>
-              日志</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                日志
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/links/">
-              <i class="iconfont icon-link-fill"></i>
-              友链/小伙伴们</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链/小伙伴们
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="https://serinity.lofter.com">
-              <i class="iconfont icon-link-fill"></i>
-              Lofter</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://serinity.lofter.com">
+                <i class="iconfont icon-link-fill"></i>
+                Lofter
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="https://marshmallowlands.github.io/aboutme/question.html">
-              <i class="iconfont icon-link-fill"></i>
-              常见问题</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="https://marshmallowlands.github.io/aboutme/question.html">
+                <i class="iconfont icon-link-fill"></i>
+                常见问题
+              </a>
+            </li>
+          
         
           
           
           
-          <li class="nav-item">
-            <a class="nav-link" href="/about/">
-              <i class="iconfont icon-user-fill"></i>
-              关于我</a>
-          </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于我
+              </a>
+            </li>
+          
         
         
           <li class="nav-item" id="search-btn">
-            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
       </ul>
@@ -118,12 +148,12 @@
   </div>
 </nav>
 
-    <div class="view intro-2" id="background" parallax=true
-         style="background: url('https://cdn.jsdelivr.net/gh/marshmallowlands/marshmallowlands.github.io@latest/img/avatar.png') no-repeat center center;
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('https://q1.qlogo.cn/g?b=qq&nk=2145136703&s=640') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="container text-center white-text fadeInUp">
+          <div class="container page-header text-center fade-in-up">
             <span class="h2" id="subtitle">
               
             </span>
@@ -144,7 +174,7 @@
           >
           
             <div class="about-avatar">
-              <img src="https://cdn.jsdelivr.net/gh/marshmallowlands/marshmallowlands.github.io@latest/img/avatar.png" srcset="/img/loading.svg"
+              <img src="https://q1.qlogo.cn/g?b=qq&nk=2145136703&s=640" srcset="/img/loading.gif"
                    class="img-fluid" alt="avatar">
             </div>
           
@@ -158,22 +188,6 @@
     <div class="about-name">Mohandar·Leon</div>
     <div class="about-intro">来自河北四线城市的一名学生</div>
     <div class="about-icons">
-      
-        
-        
-        
-        <a href="https://jq.qq.com/?_wv=1027&amp;k=EZEZuGqc" class="">
-          <i class="iconfont icon-qq-fill" aria-hidden="true"></i>
-          
-        </a>
-      
-        
-        
-        
-        <a href="https://space.bilibili.com/167324945" class="">
-          <i class="iconfont icon-bilibili-fill" aria-hidden="true"></i>
-          
-        </a>
       
     </div>
   </div>
@@ -259,7 +273,7 @@
       fixed: true,
       autoplay: 'false' === 'true',
       loop: 'all',
-      order: 'list',
+      order: 'random',
       theme: '#b7daff',
       preload: 'none',
       audio: [{"name":"All I Wanna Do","artist":"Martin Jensen","url":"http://m10.music.126.net/20200731095300/75f361c5099c107460bcea7affd1fa66/ymusic/93fa/3be9/40dd/c5bded1bc6d788af377c93a461504c72.mp3","cover":"https://p2.music.126.net/NLIxnlNPSPk3GFacJg01kA==/17814287393396301.jpg"},{"name":"Cake","artist":"Flo Rida","url":"https://cdn.jsdelivr.net/gh/marshmallowlands/MarshmallowlandsBlogSrc/Music/FliRida-Cake","cover":"https://p1.music.126.net/eHp5HwGxOo_gTydCWCL5Lw==/18357446138150998.jpg"},{"name":"Old Town Road (Remix)","artist":"Lil Nas X / Billy Ray Cyrus","url":"https://music.163.com/song/media/outer/url?id=1356795124.mp3","cover":"https://p2.music.126.net/cxlFwgtN8W8wmpGSZ6656Q==/109951163977322804.jpg"},{"name":"Stranger Things","artist":"Kygo / OneRepublic","url":"https://music.163.com/song/media/outer/url?id=515947224.mp3","cover":"https://p1.music.126.net/jL4RwOA1KuDUllhqSV55Zg==/109951163181278338.jpg"},{"name":"The Cure","artist":"Lady Gaga","url":"https://music.163.com/song/media/outer/url?id=472045959.mp3","cover":"https://p2.music.126.net/bARV4ZiYwNpoaZTyhtEwLg==/18679603046750668.jpg"},{"name":"Don`t Wanna Know","artist":"Maroon 5","url":"https://music.163.com/song/media/outer/url?id=461544126.mp3","cover":"https://p2.music.126.net/1Cg_SfvPnVLJm5_6JDdbzg==/18633423557738147.jpg"},{"name":"The River","artist":"Axel Johansson / Tina Stachowiak","url":"https://music.163.com/song/media/outer/url?id=519265246.mp3","cover":"https://p1.music.126.net/q-gDEIdjdmdCFGzpOyweZg==/18214509626309727.jpg"},{"name":"Overthinker","artist":"INZO","url":"https://music.163.com/song/media/outer/url?id=1311091060.mp3","cover":"https://p2.music.126.net/x3CMViOImbO1Lo2zCHISIg==/109951163557713788.jpg"},{"name":"Freak me","artist":"Ciara Tekno","url":"https://cdn.jsdelivr.net/gh/marshmallowlands/MarshmallowlandsBlogSrc/Music/Ciara-FreakeMe","cover":"https://p2.music.126.net/jMkRTIcxu-MPVahTOw074w==/109951164062650828.jpg"},{"name":"La Boite a Musique (Live at the Wellington Opera House)","artist":"Rhian Sheehan","url":"https://music.163.com/song/media/outer/url?id=1317047422.mp3","cover":"https://p1.music.126.net/y-KLQ407JiQiS-y22WEj1w==/109951163846795298.jpg"},{"name":"The Monster","artist":"Eminem/Rihanna","url":"https://music.163.com/song/media/outer/url?id=27902187.mp3","cover":"https://p2.music.126.net/JlRfDca09E6kvp5Q_vcuZQ==/109951163251461103.jpg"},{"name":"Confidence","artist":"Gjan","url":"https://music.163.com/song/media/outer/url?id=569105338.mp3","cover":"https://p1.music.126.net/8fsGozqbHZauGcbb16pWqg==/109951163322424135.jpg"},{"name":"Last Summer","artist":"Johnny Orlando","url":"https://music.163.com/song/media/outer/url?id=1311075507.mp3","cover":"https://p2.music.126.net/7sZo_GfxKNJRTv2DMim6Sw==/109951163909519437.jpg"},{"name":"The Storm","artist":"TheFatRat/Maisy Kay","url":"https://music.163.com/song/media/outer/url?id=1417907835.mp3","cover":"https://p2.music.126.net/bjcE9qd6V-EW_jHbBkB6gA==/109951164723618677.jpg"},{"name":"Krewella-Alibi(BEAUZ Remix)","artist":"BEAUZ","url":"https://music.163.com/song/media/outer/url?id=1309007044.mp3","cover":"https://p1.music.126.net/6zRVvVnBmBhg0M3XbqWI2Q==/109951163544310963.jpg"},{"name":"Towards The Sun","artist":"Rihanna","url":"https://music.163.com/song/media/outer/url?id=31081150.mp3","cover":"https://p1.music.126.net/k1NKXhziOXjoXTd14hjxEw==/7826323767034876.jpg"},{"name":"Dancing In The Dark","artist":"Rihanna","url":"https://music.163.com/song/media/outer/url?id=31081157.mp3","cover":"https://p1.music.126.net/k1NKXhziOXjoXTd14hjxEw==/7826323767034876.jpg"},{"name":"Alive","artist":"obylx","url":"https://music.163.com/song/media/outer/url?id=1304788672.mp3","cover":"https://p1.music.126.net/1F2DyErbiLRm45CAL4huaw==/109951163510919730.jpg"},{"name":"Да да да","artist":"Tanir/Tyomcha","url":"https://music.163.com/song/media/outer/url?id=1384583411.mp3","cover":"https://p2.music.126.net/XUdTze67NMwifuwZCUnZww==/109951164298522428.jpg"},{"name":"Ain`t My Fault(R3hab Remix)","artist":"Zara Larsson/R3hab","url":"https://music.163.com/song/media/outer/url?id=433018366.mp3","cover":"https://p1.music.126.net/xZcV1ZTPB9huvpTeBDWROw==/1385384666879290.jpg"},{"name":"Drowning","artist":"Franklin/Digital Farm Animals/Sorana","url":"https://music.163.com/song/media/outer/url?id=1381403325.mp3","cover":"https://p2.music.126.net/A8yEaHUXIlXZLh9roQVjUA==/109951164257049636.jpg"},{"name":"Loyal","artist":"YOUNG BOMBS/Gigi","url":"https://music.163.com/song/media/outer/url?id=1386012372.mp3","cover":"https://p1.music.126.net/SZ4yy5325t1QKq4yU9lLRQ==/109951164315318494.jpg"},{"name":"Road of Loneliness","artist":"Tilka/Racheka","url":"https://music.163.com/song/media/outer/url?id=422419126.mp3","cover":"https://p1.music.126.net/jgpBnS0nb5VOLHrPZBJyNw==/3438172866030138.jpg"},{"name":"I want it","artist":"3 ONE OH","url":"https://music.163.com/song/media/outer/url?id=1407998585.mp3","cover":"https://p1.music.126.net/lMXj_T8iKAf5navM0Y4MJQ==/109951164489342366.jpg"},{"name":"Make look it easy","artist":"Danger Twins","url":"https://music.163.com/song/media/outer/url?id=1436445580.mp3","cover":"https://p2.music.126.net/EjyMwxb2zavlMcpE3eG78w==/109951164859692759.jpg"},{"name":"You Need To Calm Down","artist":"Clean Bandit Remix","url":"https://music.163.com/song/media/outer/url?id=1385336748.mp3","cover":"https://p1.music.126.net/bi-B9Jgwusvxk6tNGPSLfQ==/109951164307894422.jpg"},{"name":"Playboy style","artist":"Clean Bandit Remix/Charli XCX/Bhad Bhable","url":"https://music.163.com/song/media/outer/url?id=1328600598.mp3","cover":"https://p2.music.126.net/vfWdF6Kxnu3E-y-egER4cg==/109951163896949278.jpg"},{"name":"Ready Let`s Go","artist":"DARKMINDS","url":"https://music.163.com/song/media/outer/url?id=1418880389.mp3","cover":"https://p2.music.126.net/kn0VBNj877HgJkEizGJISg==/109951164653336924.jpg"},{"name":"Life Itself","artist":"Glass Animals","url":"https://music.163.com/song/media/outer/url?id=427416514.mp3","cover":"https://p2.music.126.net/Iv34NobjvcSjtpKSkZEYCA==/1394180759042974.jpg"},{"name":"Summer","artist":"嘿人李逵Noisemakers/徐梦圆/AirJordy","url":"https://music.163.com/song/media/outer/url?id=1377582308.mp3","cover":"https://p2.music.126.net/mEnZyZBChwAMskR5Yxndjg==/109951164223808332.jpg"},{"name":"Kiss It Better(R3hab Remix)","artist":"Rihanna/R3hab","url":"https://music.163.com/song/media/outer/url?id=415185953.mp3","cover":"https://p1.music.126.net/Cjt_kHp8BOxdoe7Kfe-qzA==/768558637962510.jpg"},{"name":"Best of 2015(Album Mix)","artist":"Various Artists","url":"https://music.163.com/song/media/outer/url?id=41647509.mp3","cover":"https://p1.music.126.net/nLDmHUR3VNwtMPYRp3H-hw==/109951163311631512.jpg"}]
@@ -280,23 +294,6 @@
         <span>Fluid</span></a>
     </div>
     
-  <div>
-    
-      <!-- 不蒜子统计PV -->
-      
-      <span id="busuanzi_container_site_pv" style="display: none">
-      总访问量 <span id="busuanzi_value_site_pv"></span> 次
-    </span>
-    
-    
-      <!-- 不蒜子统计UV -->
-      
-      <span id="busuanzi_container_site_uv" style="display: none">
-      总访客数 <span id="busuanzi_value_site_uv"></span> 人
-    </span>
-    
-  </div>
-
 
     
 
@@ -307,12 +304,15 @@
 <!-- SCRIPTS -->
 <script src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="/js/debouncer.js"></script>
 <script src="/js/main.js"></script>
 
+<!-- Plugins -->
 
-  <script src="/js/lazyload.js"></script>
 
-
+  
+    <script src="/js/lazyload.js"></script>
+  
 
 
 
@@ -321,28 +321,9 @@
 
 
 
-  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
-
-<!-- Plugins -->
-
-
-
-  <script src="https://cdn.staticfile.org/prettify/188.0.0/prettify.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('pre').each(function () {
-        const pre = $(this);
-        if (pre.find('code.mermaid').length > 0) {
-          return;
-        }
-        pre.addClass('prettyprint  linenums');
-      });
-      prettyPrint();
-    })
-  </script>
 
 
 
@@ -388,7 +369,7 @@
     var path = "/local-search.xml";
     var inputArea = document.querySelector("#local-search-input");
     inputArea.onclick = function () {
-      getSearchFile(path);
+      searchFunc(path, 'local-search-input', 'local-search-result');
       this.onclick = null
     }
   </script>
@@ -401,56 +382,7 @@
 
 
 
-  
-  
-    <script>
-      !function (e, t, a) {
-        function r() {
-          for (var e = 0; e < s.length; e++) s[e].alpha <= 0 ? (t.body.removeChild(s[e].el), s.splice(e, 1)) : (s[e].y--, s[e].scale += .004, s[e].alpha -= .013, s[e].el.style.cssText = "left:" + s[e].x + "px;top:" + s[e].y + "px;opacity:" + s[e].alpha + ";transform:scale(" + s[e].scale + "," + s[e].scale + ") rotate(45deg);background:" + s[e].color + ";z-index:99999");
-          requestAnimationFrame(r)
-        }
 
-        function n() {
-          var t = "function" == typeof e.onclick && e.onclick;
-          e.onclick = function (e) {
-            t && t(), o(e)
-          }
-        }
-
-        function o(e) {
-          var a = t.createElement("div");
-          a.className = "heart", s.push({
-            el: a,
-            x: e.clientX - 5,
-            y: e.clientY - 5,
-            scale: 1,
-            alpha: 1,
-            color: c()
-          }), t.body.appendChild(a)
-        }
-
-        function i(e) {
-          var a = t.createElement("style");
-          a.type = "text/css";
-          try {
-            a.appendChild(t.createTextNode(e))
-          } catch (t) {
-            a.styleSheet.cssText = e
-          }
-          t.getElementsByTagName("head")[0].appendChild(a)
-        }
-
-        function c() {
-          return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
-        }
-
-        var s = [];
-        e.requestAnimationFrame = e.requestAnimationFrame || e.webkitRequestAnimationFrame || e.mozRequestAnimationFrame || e.oRequestAnimationFrame || e.msRequestAnimationFrame || function (e) {
-          setTimeout(e, 1e3 / 60)
-        }, i(".heart{width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);}.heart:after,.heart:before{content: '';width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;}.heart:after{top: -5px;}.heart:before{left: -5px;}"), n(), r()
-      }(window, document);
-    </script>
-  
 
 
 

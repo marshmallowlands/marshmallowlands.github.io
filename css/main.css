@@ -78,7 +78,7 @@ img[srcset] {
   height: 100%;
 }
 .white-text {
-  color: #fff;
+  color: #212121;
 }
 .fadeInUp {
   -webkit-animation-name: fadeInUp;
@@ -1128,7 +1128,7 @@ h6::before {
 .markdown-body .btn {
   background: #2f4154;
   border-radius: 0.25rem;
-  color: #fff !important;
+  color: #212121 !important;
   display: inline-block;
   font-size: 0.875em;
   line-height: 2;
@@ -1144,7 +1144,7 @@ h6::before {
 }
 .markdown-body .btn:hover {
   background: #23ae92;
-  color: #fff !important;
+  color: #212121 !important;
   text-decoration: none;
 }
 .group-picture img {
