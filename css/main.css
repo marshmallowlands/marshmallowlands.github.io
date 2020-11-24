@@ -228,7 +228,7 @@ sup > a::before,
 html,
 body {
   font-size: 16px;
-  font-family: Roboto,PingFang SC,Microsoft Yahei UI,Noto Sans CJK SC,更纱黑体 UI SC,Microsoft Jhenghei UI,sans-serif;
+  font-family: Roboto,Microsoft Yahei UI,PingFang SC,Noto Sans CJK SC,更纱黑体 UI SC,Microsoft Jhenghei UI,sans-serif;
 }
 html,
 body,
@@ -838,7 +838,7 @@ img[srcset] {
 .markdown-body {
   font-size: 1rem;
   margin-bottom: 2rem;
-  font-family: Roboto,PingFang SC,Microsoft Yahei UI,Noto Sans CJK SC,更纱黑体 UI SC,Microsoft Jhenghei UI,sans-serif;
+  font-family: Roboto,Microsoft Yahei UI,PingFang SC,Noto Sans CJK SC,更纱黑体 UI SC,Microsoft Jhenghei UI,sans-serif;
   color: var(--post-text-color);
 }
 .markdown-body h1,
