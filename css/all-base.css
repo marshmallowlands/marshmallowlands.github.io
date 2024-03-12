@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap');
+
+* {
+    font-family: 'Segoe UI Variable Display', 'Chakra Petch', 'HarmonyOSHans', 'PingFang SC','Noto Sans SC', 'Microsoft YaHei UI', sans-serif;
+}
+
+[data-user-color-scheme="dark"] {
+    --text-color: white;
+    --subtitle-color: white;
+    --body-bg-color: #24292f;
+    --board-bg-color: rgb(35, 40, 45);
+    --navbar-bg-color: #24292f;
+    --navbar-text-color: white;
+}
+
+:root {
+    --navbar-bg-color: #24292f;
+}
+
+nav#navbar {
+    backdrop-filter: blur(20px);
+}
+
+span#subtitle, .typed-cursor.typed-cursor--blink {
+    text-shadow: 2px 2px 3px black;
+    font-weight: bold;
+}
+
