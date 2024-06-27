@@ -9,14 +9,14 @@
 [data-user-color-scheme="dark"] {
     --text-color: white;
     --subtitle-color: white;
-    --body-bg-color: #08282C;
-    --board-bg-color: #08282c;
-    --navbar-bg-color: #08282C;
+    --body-bg-color: #001d26;
+    --board-bg-color: #001d26;
+    --navbar-bg-color: #001d26;
     --navbar-text-color: white;
 }
 
 :root {
-    --navbar-bg-color: #08282C;
+    --navbar-bg-color: #001d26;
 }
 
 nav#navbar {
