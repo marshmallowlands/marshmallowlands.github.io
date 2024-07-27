@@ -5,6 +5,26 @@
     display: none;
 }
 
+.modal-dialog .modal-content {
+    border-radius: 0.75rem;
+    background: #1a202c;
+    color: white;
+}
+
+.modal-dialog .modal-content .modal-header {
+    border-bottom: none;
+}
+
+.w-100 {
+    width: 10% !important;
+}
+
+.md-form label {
+    top: -2rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+
 * {
     font-family: 'Roboto', 'Segoe UI Variable Text', 'Segoe UI', 'SOIGNE + vivo Sans SC VF', 'vivo Sans SC VF', 'HarmonyOSHans', 'PingFang SC','Noto Sans SC', 'Microsoft YaHei UI', sans-serif;
     font-optical-sizing: auto;
