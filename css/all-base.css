@@ -9,7 +9,7 @@
 
 .modal-dialog .modal-content {
     border-radius: 0.75rem;
-    background: #262422;
+    background: #020e1b;
     color: white;
 }
 
@@ -44,14 +44,14 @@
 [data-user-color-scheme="dark"] {
     --text-color: white;
     --subtitle-color: white;
-    --body-bg-color: #181818;
-    --board-bg-color: #181818;
-    --navbar-bg-color: #181818;
+    --body-bg-color: #020e1b;
+    --board-bg-color: #020e1b;
+    --navbar-bg-color: #020e1b;
     --navbar-text-color: white;
 }
 
 :root {
-    --navbar-bg-color: rgba(24, 24, 24, 0.8);
+    --navbar-bg-color: #020e1b;
 }
 
 nav#navbar {
