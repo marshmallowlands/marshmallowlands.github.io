@@ -26,7 +26,7 @@
 <meta property="og:description" content="前言由于 IPv4 地址池耗尽的原因，现在，三大运营商一般情况下都不会给家庭用户公网 IP 了，这导致有很多需要公网 IP 用的服务，都用不了了。 一般情况下，除了和运营商再去要公网 IP，或者是使用内网穿透程序，基本上没有使用其他方法。 不过呢，现在又有新东西可以玩了，他呢，就是今天我们要说的脚本：Natter。 这 Natter 程序是啥来头Natter，是 Github 用户 MikeWan">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-01-03T14:00:13.000Z">
-<meta property="article:modified_time" content="2025-01-03T14:33:11.679Z">
+<meta property="article:modified_time" content="2025-01-03T14:45:03.153Z">
 <meta property="article:author" content="Marshmallowlands">
 <meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary_large_image">
@@ -250,7 +250,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          563 字
+          632 字
         
       </span>
     
@@ -261,7 +261,7 @@
         
         
         
-          5 分钟
+          6 分钟
         
       </span>
     
@@ -313,10 +313,10 @@
     <li>全锥型 NAT、Fullcone NAT 的网络环境</li>
     <li>设备可以安装和运行 Python</li>
     <li>路由器或光猫设置 DMZ IP 到要使用 Natter 的设备。</li>
-    <li>重中之重：按照本文的步骤，都正确无误设置完毕后，保持程序的运行。</li>
+    <li class="text-warning">重中之重：按照本文的步骤，都正确无误设置完毕后，保持程序的运行。</li>
 </ul>
 
-<p>以上条件都满足后，你可以双击 Natter 脚本，Natter 会自动尝试映射，如果没问题，脚本返回这些内容<br>以下是示例</p>
+<p>以上条件都满足后，你可以双击 Natter 脚本，Natter 会自动尝试映射，如果没问题，脚本返回这些内容<br>以下是示例：</p>
 <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">2023</span>-<span class="hljs-number">11</span>-<span class="hljs-number">01</span> <span class="hljs-number">01</span>:<span class="hljs-number">00</span>:<span class="hljs-number">08</span><span class="hljs-meta"> [I] Natter</span><br><span class="hljs-meta">2023-11-01 01:00:08 [I] Tips: Use `--help` to see help messages</span><br><span class="hljs-meta">2023-11-01 01:00:12 [I]</span><br><span class="hljs-attribute">2023</span>-<span class="hljs-number">11</span>-<span class="hljs-number">01</span> <span class="hljs-number">01</span>:<span class="hljs-number">00</span>:<span class="hljs-number">12</span><span class="hljs-meta"> [I] tcp://192.168.1.100:13483 &lt;--Natter--&gt; tcp://203.0.113.10:14500</span><br><span class="hljs-meta">2023-11-01 01:00:12 [I]</span><br><span class="hljs-attribute">2023</span>-<span class="hljs-number">11</span>-<span class="hljs-number">01</span> <span class="hljs-number">01</span>:<span class="hljs-number">00</span>:<span class="hljs-number">12</span><span class="hljs-meta"> [I] Test mode in on.</span><br><span class="hljs-meta">2023-11-01 01:00:12 [I] Please check [ http://203.0.113.10:14500 ]</span><br><span class="hljs-attribute">2023</span>-<span class="hljs-number">11</span>-<span class="hljs-number">01</span> <span class="hljs-number">01</span>:<span class="hljs-number">00</span>:<span class="hljs-number">12</span><span class="hljs-meta"> [I]</span><br><span class="hljs-attribute">2023</span>-<span class="hljs-number">11</span>-<span class="hljs-number">01</span> <span class="hljs-number">01</span>:<span class="hljs-number">00</span>:<span class="hljs-number">12</span><span class="hljs-meta"> [I] LAN &gt; 192.168.1.100:13483   [ OPEN ]</span><br><span class="hljs-attribute">2023</span>-<span class="hljs-number">11</span>-<span class="hljs-number">01</span> <span class="hljs-number">01</span>:<span class="hljs-number">00</span>:<span class="hljs-number">12</span><span class="hljs-meta"> [I] LAN &gt; 192.168.1.100:13483   [ OPEN ]</span><br><span class="hljs-attribute">2023</span>-<span class="hljs-number">11</span>-<span class="hljs-number">01</span> <span class="hljs-number">01</span>:<span class="hljs-number">00</span>:<span class="hljs-number">12</span><span class="hljs-meta"> [I] LAN &gt; 203.0.113.10:14500    [ OPEN ]</span><br><span class="hljs-attribute">2023</span>-<span class="hljs-number">11</span>-<span class="hljs-number">01</span> <span class="hljs-number">01</span>:<span class="hljs-number">00</span>:<span class="hljs-number">13</span><span class="hljs-meta"> [I] WAN &gt; 203.0.113.10:14500    [ OPEN ]</span><br><span class="hljs-attribute">2023</span>-<span class="hljs-number">11</span>-<span class="hljs-number">01</span> <span class="hljs-number">01</span>:<span class="hljs-number">00</span>:<span class="hljs-number">13</span><span class="hljs-meta"> [I]</span><br></code></pre></td></tr></table></figure>
 </span>
 
@@ -324,7 +324,10 @@
 <figure class="highlight asciidoc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs asciidoc"><span class="hljs-section">It works!</span><br><span class="hljs-section">--------</span><br>Natter<br></code></pre></td></tr></table></figure>
 
 <p>如果能打开，就代表有得玩了。</p>
-<h1 id="其他用法"><a href="#其他用法" class="headerlink" title="其他用法"></a>其他用法</h1><p>其他用法，可以使用 natter.py –help 命令查看更多使用方式。</p>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>就拿我的世界服务器举个例子吧，你在 CMD 命令窗口打这些命令</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">natter</span>.py -t <span class="hljs-number">127.0.0.1</span> -p <span class="hljs-number">25565</span><br></code></pre></td></tr></table></figure>
+<p>四个 IP 和端口都是 OPEN 后，复制 WAN IP 那行的 IP 地址和端口，给你的好友或是其他人，别人就可以连接上你了</p>
+<p>其他用法，可以使用 natter.py –help 命令查看更多使用方式。</p>
 <h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p><a target="_blank" rel="noopener" href="https://github.com/MikeWang000000/Natter">https://github.com/MikeWang000000/Natter</a></p>
 
                 
