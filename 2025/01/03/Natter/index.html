@@ -18,15 +18,15 @@
   <meta name="author" content="Marshmallowlands">
   <meta name="keywords" content="">
   
-    <meta name="description" content="前言由于 IPv4 地址池耗尽的原因，现在，三大运营商一般情况下都不会给家庭用户公网 IP 了，这导致有很多需要公网 IP 用的服务，都用不了了。 一般情况下，除了和运营商再去要公网 IP，或者是使用内网穿透程序，基本上没有使用其他方法。 不过呢，现在又有新东西可以玩了，他呢，就是今天我们要说的脚本：Natter。 这 Natter 程序是啥来头Natter，是 Github 用户 MikeWan">
+    <meta name="description" content="此文章处于初始阶段，          后续可能有更改，请以最新的文章内容为准。          必须是 Fullcone NAT 才能玩！不是的话，洗洗睡吧。   前言由于 IPv4 地址池耗尽的原因，现在，三大运营商一般情况下都不会给家庭用户公网 IP 了，这导致有很多需要公网 IP 用的服务，都用不了了。 一般情况下，除了和运营商再去要公网 IP，或者是使用内网穿透程序，基本上没">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用 Natter 脚本在无公网 IP 环境上实现端口映射">
 <meta property="og:url" content="https://marshmallowlands.github.io/2025/01/03/Natter/index.html">
 <meta property="og:site_name" content="Marshmallowlands 的个人博客">
-<meta property="og:description" content="前言由于 IPv4 地址池耗尽的原因，现在，三大运营商一般情况下都不会给家庭用户公网 IP 了，这导致有很多需要公网 IP 用的服务，都用不了了。 一般情况下，除了和运营商再去要公网 IP，或者是使用内网穿透程序，基本上没有使用其他方法。 不过呢，现在又有新东西可以玩了，他呢，就是今天我们要说的脚本：Natter。 这 Natter 程序是啥来头Natter，是 Github 用户 MikeWan">
+<meta property="og:description" content="此文章处于初始阶段，          后续可能有更改，请以最新的文章内容为准。          必须是 Fullcone NAT 才能玩！不是的话，洗洗睡吧。   前言由于 IPv4 地址池耗尽的原因，现在，三大运营商一般情况下都不会给家庭用户公网 IP 了，这导致有很多需要公网 IP 用的服务，都用不了了。 一般情况下，除了和运营商再去要公网 IP，或者是使用内网穿透程序，基本上没">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-01-03T14:00:13.000Z">
-<meta property="article:modified_time" content="2025-01-03T14:45:03.153Z">
+<meta property="article:modified_time" content="2025-01-08T15:36:50.943Z">
 <meta property="article:author" content="Marshmallowlands">
 <meta property="article:tag" content="网络">
 <meta name="twitter:card" content="summary_large_image">
@@ -250,7 +250,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          632 字
+          907 字
         
       </span>
     
@@ -261,7 +261,7 @@
         
         
         
-          6 分钟
+          8 分钟
         
       </span>
     
@@ -303,11 +303,21 @@
             
               <div class="markdown-body">
                 
-                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于 IPv4 地址池耗尽的原因，现在，三大运营商一般情况下都不会给家庭用户公网 IP 了，这导致有很多需要公网 IP 用的服务，都用不了了。</p>
+                <p class="note note-success" style="padding-left: 20px;margin-top:40px">
+    此文章处于初始阶段，
+    <br>
+    后续可能有更改，请以最新的文章内容为准。
+    <br><br>
+    必须是 Fullcone NAT 才能玩！不是的话，洗洗睡吧。
+</p>
+
+<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>由于 IPv4 地址池耗尽的原因，现在，三大运营商一般情况下都不会给家庭用户公网 IP 了，这导致有很多需要公网 IP 用的服务，都用不了了。</p>
 <p>一般情况下，除了和运营商再去要公网 IP，或者是使用内网穿透程序，基本上没有使用其他方法。</p>
 <p>不过呢，现在又有新东西可以玩了，他呢，就是今天我们要说的脚本：Natter。</p>
 <h1 id="这-Natter-程序是啥来头"><a href="#这-Natter-程序是啥来头" class="headerlink" title="这 Natter 程序是啥来头"></a>这 Natter 程序是啥来头</h1><p>Natter，是 Github 用户<b class="text-success"> MikeWang000000 </b>编写的一个 Python 脚本程序，主要用途就是来在<b class="text-warning">全锥型 NAT（Fullcone NAT）的网络环境下</b>，通过一种 “打洞” 的方式，将本地网络的端口公开到至互联网上，比如公开 HTTP 服务器，Minecraft 我的世界服务器等服务。</p>
 <p>想知道怎么用？那就接着往下看吧！</p>
+<h1 id="Fullcone-NAT-？这是啥玩意儿啊-？"><a href="#Fullcone-NAT-？这是啥玩意儿啊-？" class="headerlink" title="Fullcone NAT ？这是啥玩意儿啊 ？"></a>Fullcone NAT ？这是啥玩意儿啊 ？</h1><p>举个简单的例子，比如，你从小区门出来，但是呢，小区有闸机，不要在意，举个例子而已。<br>这个闸机呢，就是运营商的 NAT 设备了，但是呢这个闸机有等待时间，也就是说，有端口回收等待时间，<br>别人呢，就可以趁着闸机还开着，可以自由出入，有人通过，就会延长关闭时间。时间到了，就不让外人进入了。</p>
+<p>想再次访问，你得重新从闸机出一下了，但是是从另一个闸机，假设有 65535 个闸机，网络的端口号 65535 个可用，<br>你每次出闸机的出口都是不一样的。</p>
 <h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p><b>在使用之前，你需要满足这些条件。</b></p>
 <ul>
     <li>全锥型 NAT、Fullcone NAT 的网络环境</li>
@@ -326,7 +336,8 @@
 <p>如果能打开，就代表有得玩了。</p>
 <h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><p>就拿我的世界服务器举个例子吧，你在 CMD 命令窗口打这些命令</p>
 <figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">natter</span>.py -t <span class="hljs-number">127.0.0.1</span> -p <span class="hljs-number">25565</span><br></code></pre></td></tr></table></figure>
-<p>四个 IP 和端口都是 OPEN 后，复制 WAN IP 那行的 IP 地址和端口，给你的好友或是其他人，别人就可以连接上你了</p>
+<p>四个 IP 和端口都是 OPEN 后，复制 WAN IP 那行的 IP 地址和端口，给你的好友或是其他人，别人就可以连接上你了<br><b>-t</b> 参数可以填写其他局域网的 IP，比如：natter.py -t 192.168.1.2 -p 25565</p>
+<p><del><b>不过好像也可以填写互联网的 IP，但这样不就成了反向代理了么哈哈哈</b></del></p>
 <p>其他用法，可以使用 natter.py –help 命令查看更多使用方式。</p>
 <h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p><a target="_blank" rel="noopener" href="https://github.com/MikeWang000000/Natter">https://github.com/MikeWang000000/Natter</a></p>
 
