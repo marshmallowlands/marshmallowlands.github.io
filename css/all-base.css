@@ -28,7 +28,7 @@ code,figure {
     font-family: monospace !important;
 }
 
-p,h1,h2,h3,h4,h5,a,.banner-text,label,div {
+* {
     font-family: Roboto, Noto Sans SC, Noto Sans CJK SC, PingFang SC, Microsoft YaHei UI, monospace;
 }
 
