@@ -24,11 +24,7 @@
     color: rgba(255, 255, 255, 0.75) !important;
 }
 
-code,figure {
-    font-family: monospace !important;
-}
-
-body,.main,code,.code,b,p {
+body,.main,code,.code,b,p,div,h1,h2,h3,h4,h5,h6 {
     font-family: Roboto, Noto Sans SC, Noto Sans CJK SC, PingFang SC, Microsoft YaHei UI, monospace;
 }
 
