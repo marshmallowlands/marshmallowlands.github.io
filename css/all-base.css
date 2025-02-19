@@ -24,29 +24,12 @@
     color: rgba(255, 255, 255, 0.75) !important;
 }
 
-/* body,.header,.main {
-    font-family: 'Roboto', 'vivo Sans SC VF', 'HarmonyOSHans', 'PingFang SC','Noto Sans SC', 'Microsoft YaHei UI', sans-serif,monospace;
-    font-optical-sizing: auto;
-    font-variation-settings:
-            "slnt" 0,
-            "wdth" 100,
-            "GRAD" 0,
-            "XOPQ" 96,
-            "XTRA" 468,
-            "YOPQ" 79,
-            "YTAS" 750,
-            "YTDE" -203,
-            "YTFI" 738,
-            "YTLC" 514,
-            "YTUC" 712;
-} */
-
-.code {
+code,figure {
     font-family: monospace !important;
 }
 
-.hljs .apache {
-    font-family: monospace !important;
+p,h1,h2,h3,h4,h5,a,.banner-text,label,div {
+    font-family: Roboto, Noto Sans SC, Noto Sans CJK SC, PingFang SC, Microsoft YaHei UI, monospace;
 }
 
 [data-user-color-scheme="dark"] {
