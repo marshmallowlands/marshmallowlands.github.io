@@ -1,1 +1,0 @@
-function loadSettings(){var t=localStorage.getItem("theme"),t=(t&&document.documentElement.setAttribute("theme",t),localStorage.getItem("showBanner"));null==t||"true"==t?document.documentElement.setAttribute("showBanner",!0):document.documentElement.setAttribute("showBanner",!1)}loadSettings();
