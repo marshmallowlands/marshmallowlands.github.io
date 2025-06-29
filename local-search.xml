@@ -22,9 +22,9 @@
       
       <tag>网络</tag>
       
-      <tag>服务器</tag>
-      
       <tag>TR069</tag>
+      
+      <tag>服务器</tag>
       
     </tags>
     
@@ -51,6 +51,8 @@
       
       <tag>网络</tag>
       
+      <tag>服务器</tag>
+      
       <tag>NAT</tag>
       
       <tag>网络地址转换</tag>
@@ -58,8 +60,6 @@
       <tag>IP 地址</tag>
       
       <tag>端口映射</tag>
-      
-      <tag>服务器</tag>
       
       <tag>打洞</tag>
       
@@ -94,9 +94,9 @@
       
       <tag>IP 地址</tag>
       
-      <tag>Python</tag>
-      
       <tag>端口映射</tag>
+      
+      <tag>Python</tag>
       
     </tags>
     
