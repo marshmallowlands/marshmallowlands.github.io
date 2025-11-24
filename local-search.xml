@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>使用宽带的 TR069 VLAN 进行高速通信</title>
-    <link href="/2025/06/27/2025-06/TR069/"/>
-    <url>/2025/06/27/2025-06/TR069/</url>
+    <title>使用 GOST 来绕过运营商对 WireGuard 的 QoS 限制机制</title>
+    <link href="/2025/11/25/2025-11/Bypass-ISP-QoS/"/>
+    <url>/2025/11/25/2025-11/Bypass-ISP-QoS/</url>
     
-    <content type="html"><![CDATA[<p><span class="text-white-50">最近更新日期：2025 年 6 月 29 日，19:40。</span><br><br></p><div class="note note-info pl-5 pr-5 pt-4 pb-4">    <span style="font-size:x-large;font-weight:bold">提示</span>    <br><br>    <span>        并不是所有地区都能用 TR069 进行互联，运营商可能屏蔽了该 VLAN 域的互联权限。        <br>        而且，每个地区，每个运营商的 TR069 VLAN ID 也可能不一样。        <br><br>        具体请以当地的提供的设置为准。        <br>        <b><i>如果你的光猫有多余的网线接口可以插，而且你也有兴趣搞，那就继续。</i><b>    </span></div><div class="note note-danger pl-5 pr-5 pt-4 pb-4">    <span style="font-size:x-large;font-weight:bold">提示</span>    <br><br>    <span>        TR069 是局域网，没有互联网访问的权限。<br>        另外，如果 TR069 使用不当的话，可能会占满 PON 口容量，会影响到同一个 PON 口其他用户。    </span></div><h1 id="科普"><a href="#科普" class="headerlink" title="科普"></a>科普</h1><p>先科普下，TR069 是运营商远程管理光猫的一个接口，可以让运营商远程推送数据到光猫，方便<b class="text-warning">远程维护，固件升级</b>等。</p><p>我们通过 TR069 来进行互联，原理是<b class="text-warning">同一个运营商全省范围内的 TR069，获取的内网地址都是互通的</b>，都是基于 DHCP 获取的 IP ，而且不限制带宽（不确定的内容）。但我这边找了人，双方互发文件，<b class="text-warning">能跑满光猫上限</b>。</p><p>方法就是破解双方的光猫后，将 TR069 的 VLAN 绑定到一个独立的网口，由于不在一个 VLAN 下，甚至不占用宽带的带宽，然后架设隧道异地组网，甚至是你宽带停机了，也可以通过这个隧道，通过另一个用户来上网。</p><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>开始前请确保你有光猫的<b class="text-warning">超级用户权限</b>。具体如何获得这里不做赘述，请自行上网搜索。</p><p>使用超级用户登录到光猫的后台，找到网络设置，记得截图一下 TR069 的 VLAN ID 号，后续会用到。</p><h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p>建议先给 PPPoE 的 VLAN 绑定好端口，不要全都绑定，如果你有看 IPTV 电视的需求，那么 IPTV 的也不要勾选。</p><p><br><img src="/img/site/20250627-TR069/Screenshot-1.png" alt="绑定要上网的接口"></p><p>然后保存应用，我们稍微等下，让它保存配置。</p><h1 id="进一步操作"><a href="#进一步操作" class="headerlink" title="进一步操作"></a>进一步操作</h1><p>现在，我们点击<b class="text-warning">新建</b>按钮，不是新建连接，不要点错了。</p><p><br><img src="/img/site/20250627-TR069/Screenshot-2.png" alt="以河北电信为例子，新建 TR069 VLAN，然后设置 VLAN ID 为 46"></p><p>我们拿河北电信举个例子，TR069 所用的 VLAN 号是 46，那么，在 VLAN 的那一框里，我们填写上 46，然后，我们再在上网模式设置一下，把<b class="text-warning">路由</b>模式，改为<b class="text-warning">桥接</b>模式，最后我们再绑定一下网口，比如你想绑定网口 4，那么就勾选网口 4。</p><p><br><img src="/img/site/20250627-TR069/Screenshot-3.png" alt="已保存设置，然后只要把网线插到网口 4，准备开搞！"></p><p>现在，再试试看能不能获取到来自 TR069 局域网里的 DHCP 服务器的 IP 了？有的话就开搞吧！</p><h1 id="TR069-测速截图"><a href="#TR069-测速截图" class="headerlink" title="TR069 测速截图"></a>TR069 测速截图</h1><div class="note note-danger pl-5 pr-5 pt-4 pb-4">    <span style="font-size:x-large;font-weight:bold">警告</span>    <br><br>    <span>        再次说明一下，不要占用太大，否则会影响和你同一个 PON 光口的其他用户。        <br>        否则可能会引发投诉，产生更多不利影响。    </span></div><img src="/img/site/20250627-TR069/TR069-OpenSpeedTest.jpg" alt="同一个 TR069 局域网下，双方使用 OpenSpeedTest 进行测速">]]></content>
+    <content type="html"><![CDATA[<p><span class="text-white-50">最近更新日期：2025 年 11 月 25 日，00:00。</span><br><br></p><p style="padding:2em;background-color:rgba(0, 41, 82, 1);color:white;border-radius:8px">    <span style="font-size:x-large;font-weight:bold">注意</span>    <br><br>    <span style="font-size:normal">        双方都需运行 GOST。    </span></p><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>因为三大运营商的跨省结算政策，导致我和我朋友使用 WireGuard 进行游戏联机时，出现规律性的丢包。因为 WireGuard 使用的是 UDP，而且 UDP 不受运营商待见。遂使用 GOST 程序，外边包裹一层 Websocket 进行伪装，来绕过运营商的限制。</p><h1 id="怎么做？"><a href="#怎么做？" class="headerlink" title="怎么做？"></a>怎么做？</h1><h2 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h2><p>gost.exe -L udp:&#x2F;&#x2F;:[客户端本地监听的端口]&#x2F;[服务端的网卡 IP 地址]:[服务端监听的端口] -F relay+ws:&#x2F;&#x2F;[服务端所在的公网 IP 地址]:[端口]</p><h2 id="服务端"><a href="#服务端" class="headerlink" title="服务端"></a>服务端</h2><p>gost.exe -L relay+ws:&#x2F;&#x2F;:[服务端想监听的端口]</p><h1 id="其他内容"><a href="#其他内容" class="headerlink" title="其他内容"></a>其他内容</h1><p><a href="https://v2.gost.run/">https://v2.gost.run/</a></p>]]></content>
     
     
     <categories>
@@ -22,9 +22,38 @@
       
       <tag>网络</tag>
       
-      <tag>TR069</tag>
+      <tag>服务器</tag>
+      
+      <tag>QoS</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>使用宽带的 TR069 VLAN 进行高速通信</title>
+    <link href="/2025/06/27/2025-06/TR069/"/>
+    <url>/2025/06/27/2025-06/TR069/</url>
+    
+    <content type="html"><![CDATA[<p><span class="text-white-50">最近更新日期：2025 年 6 月 29 日，19:40。</span><br><br></p><div class="note note-info pl-5 pr-5 pt-4 pb-4">    <span style="font-size:x-large;font-weight:bold">提示</span>    <br><br>    <span>        并不是所有地区都能用 TR069 进行互联，运营商可能屏蔽了该 VLAN 域的互联权限。        <br>        而且，每个地区，每个运营商的 TR069 VLAN ID 也可能不一样。        <br><br>        具体请以当地的提供的设置为准。        <br>        <b><i>如果你的光猫有多余的网线接口可以插，而且你也有兴趣搞，那就继续。</i><b>    </span></div><div class="note note-danger pl-5 pr-5 pt-4 pb-4">    <span style="font-size:x-large;font-weight:bold">提示</span>    <br><br>    <span>        TR069 是局域网，没有互联网访问的权限。<br>        另外，如果 TR069 使用不当的话，可能会占满 PON 口容量，会影响到同一个 PON 口其他用户。    </span></div><h1 id="科普"><a href="#科普" class="headerlink" title="科普"></a>科普</h1><p>先科普下，TR069 是运营商远程管理光猫的一个接口，可以让运营商远程推送数据到光猫，方便<b class="text-warning">远程维护，固件升级</b>等。</p><p>我们通过 TR069 来进行互联，原理是<b class="text-warning">同一个运营商全省范围内的 TR069，获取的内网地址都是互通的</b>，都是基于 DHCP 获取的 IP ，而且不限制带宽（不确定的内容）。但我这边找了人，双方互发文件，<b class="text-warning">能跑满光猫上限</b>。</p><p>方法就是破解双方的光猫后，将 TR069 的 VLAN 绑定到一个独立的网口，由于不在一个 VLAN 下，甚至不占用宽带的带宽，然后架设隧道异地组网，甚至是你宽带停机了，也可以通过这个隧道，通过另一个用户来上网。</p><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>开始前请确保你有光猫的<b class="text-warning">超级用户权限</b>。具体如何获得这里不做赘述，请自行上网搜索。</p><p>使用超级用户登录到光猫的后台，找到网络设置，记得截图一下 TR069 的 VLAN ID 号，后续会用到。</p><h1 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h1><p>建议先给 PPPoE 的 VLAN 绑定好端口，不要全都绑定，如果你有看 IPTV 电视的需求，那么 IPTV 的也不要勾选。</p><p><br><img src="/img/site/20250627-TR069/Screenshot-1.png" alt="绑定要上网的接口"></p><p>然后保存应用，我们稍微等下，让它保存配置。</p><h1 id="进一步操作"><a href="#进一步操作" class="headerlink" title="进一步操作"></a>进一步操作</h1><p>现在，我们点击<b class="text-warning">新建</b>按钮，不是新建连接，不要点错了。</p><p><br><img src="/img/site/20250627-TR069/Screenshot-2.png" alt="以河北电信为例子，新建 TR069 VLAN，然后设置 VLAN ID 为 46"></p><p>我们拿河北电信举个例子，TR069 所用的 VLAN 号是 46，那么，在 VLAN 的那一框里，我们填写上 46，然后，我们再在上网模式设置一下，把<b class="text-warning">路由</b>模式，改为<b class="text-warning">桥接</b>模式，最后我们再绑定一下网口，比如你想绑定网口 4，那么就勾选网口 4。</p><p><br><img src="/img/site/20250627-TR069/Screenshot-3.png" alt="已保存设置，然后只要把网线插到网口 4，准备开搞！"></p><p>现在，再试试看能不能获取到来自 TR069 局域网里的 DHCP 服务器的 IP 了？有的话就开搞吧！</p><h1 id="TR069-测速截图"><a href="#TR069-测速截图" class="headerlink" title="TR069 测速截图"></a>TR069 测速截图</h1><div class="note note-danger pl-5 pr-5 pt-4 pb-4">    <span style="font-size:x-large;font-weight:bold">警告</span>    <br><br>    <span>        再次说明，不要占用太多，否则会影响和你使用的同一个 PON 光口下挂的其他用户。        <br>        否则可能会引发投诉，产生更多不利影响。    </span></div><img src="/img/site/20250627-TR069/TR069-OpenSpeedTest.jpg" alt="同一个 TR069 局域网下，双方使用 OpenSpeedTest 进行测速">]]></content>
+    
+    
+    <categories>
+      
+      <category>网络</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>网络</tag>
       
       <tag>服务器</tag>
+      
+      <tag>TR069</tag>
       
     </tags>
     
@@ -51,8 +80,6 @@
       
       <tag>网络</tag>
       
-      <tag>服务器</tag>
-      
       <tag>NAT</tag>
       
       <tag>网络地址转换</tag>
@@ -60,6 +87,8 @@
       <tag>IP 地址</tag>
       
       <tag>端口映射</tag>
+      
+      <tag>服务器</tag>
       
       <tag>打洞</tag>
       
@@ -94,9 +123,9 @@
       
       <tag>IP 地址</tag>
       
-      <tag>端口映射</tag>
-      
       <tag>Python</tag>
+      
+      <tag>端口映射</tag>
       
     </tags>
     
@@ -121,9 +150,9 @@
     
     <tags>
       
-      <tag>游戏</tag>
-      
       <tag>GTA</tag>
+      
+      <tag>游戏</tag>
       
     </tags>
     
@@ -148,9 +177,9 @@
     
     <tags>
       
-      <tag>游戏</tag>
-      
       <tag>GTA</tag>
+      
+      <tag>游戏</tag>
       
     </tags>
     
@@ -175,9 +204,9 @@
     
     <tags>
       
-      <tag>死亡搁浅</tag>
-      
       <tag>游戏</tag>
+      
+      <tag>死亡搁浅</tag>
       
     </tags>
     
@@ -190,7 +219,7 @@
     <link href="/2017/10/09/2017-10/Hello-World/"/>
     <url>/2017/10/09/2017-10/Hello-World/</url>
     
-    <content type="html"><![CDATA[<h1 id="你好，世界！"><a href="#你好，世界！" class="headerlink" title="你好，世界！"></a>你好，世界！</h1><p>博客顺利搭建</p><h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>请点击这个链接：<a href="https://marshmallowlands.github.io/about/">https://marshmallowlands.github.io/about/</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="你好，世界！"><a href="#你好，世界！" class="headerlink" title="你好，世界！"></a>你好，世界！</h1><p>博客顺利搭建</p><h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>请点击这个链接：<a href="/about">关于我</a></p>]]></content>
     
     
     
